@@ -22,7 +22,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 **Apex HORIZON IVI** is a production-grade automotive digital head unit designed for the **Raspberry Pi 5 (BCM2712 Quad-Core Cortex-A76 @ 2.4 GHz)** running embedded Yocto Linux. It renders authentic **8-inch Display Audio (D-Audio)** cockpit HMIs directly on the VideoCore VII GPU using direct Linux Kernel Mode Setting (KMS) and Direct Rendering Manager (DRM) at a deterministic **60 frames per second** with zero intermediate X11/Wayland display server latency.
 
@@ -30,7 +30,7 @@ This repository is the complete, self-contained Raspberry Pi 5 platform implemen
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```mermaid
 flowchart TB
@@ -84,7 +84,7 @@ flowchart TB
 
 ---
 
-## 🚗 Core Automotive Subsystems
+## Core Automotive Subsystems
 
 ### 1. Bluetooth Audio & Modern Media Card
 * **PipeWire Wireless Audio**: High-fidelity AAC/SBC A2DP sink streamed directly to the vehicle's HDMI speakers with zero stuttering.
@@ -111,7 +111,7 @@ flowchart TB
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 apex_IVI_midEnd_rasberryPi5/
@@ -158,7 +158,7 @@ apex_IVI_midEnd_rasberryPi5/
 
 ---
 
-## ⚡ Quick Start & Deployment Guide
+## Quick Start & Deployment Guide
 
 ### Prerequisites
 - Raspberry Pi 5 running custom Yocto Linux or a compatible ARM64 image.
@@ -179,7 +179,7 @@ This script automatically:
 
 ---
 
-## 🎛️ Physical Hardware Emulation (Keybindings)
+## Physical Hardware Emulation (Keybindings)
 
 The IVI supports external CAN bus button integration or keyboard testing:
 
@@ -193,7 +193,7 @@ The IVI supports external CAN bus button integration or keyboard testing:
 
 ---
 
-## 📜 License & Attribution
+## License & Attribution
 
 - **Lead Developer**: **Sk Rehan Ahamed** ([@skrehanahamed](https://github.com/skrehanahamed))
 - **Target Platform**: Raspberry Pi 5 (Broadcom BCM2712 / VideoCore VII)
