@@ -36,3 +36,10 @@ jobs:
           files: |
             dist/apex-ivi-rpi5-configs.tar.gz
             dist/apex-ivi-source-${{ github.ref_name }}.zip
+
+      - name: Force Update Release Metadata
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release edit "${{ github.ref_name }}" --title "Apex HORIZON IVI - Raspberry Pi 5 Platform ${{ github.ref_name }}" --notes-file release_body.md
