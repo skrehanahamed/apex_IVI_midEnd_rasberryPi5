@@ -1,0 +1,94 @@
+{
+  "updatedAt": "2026-09-13T02:10:00Z",
+  "serverName": "Apex RDS & Radio Distribution Server",
+  "stations": [
+    {
+      "frequency": "90.4",
+      "name": "Radio Udaan",
+      "band": "FM",
+      "rdsInfo": "Community Vibes - Local Folk & Cultural Melodies",
+      "streamUrl": "https://stream.radioudaan.com/listen/radio_udaan/radio.mp3",
+      "isFavorite": true
+    },
+    {
+      "frequency": "91.9",
+      "name": "Desi Zone 90s",
+      "band": "FM",
+      "rdsInfo": "Pehla Nasha - Udit Narayan & Sadhana Sargam",
+      "streamUrl": "https://www.desizoneradio.com/relay3",
+      "isFavorite": true
+    },
+    {
+      "frequency": "93.5",
+      "name": "SURYAN FM",
+      "band": "FM",
+      "rdsInfo": "April May - Idhayam | Ilaiyaraaja, Deepan C, S.N.Suren",
+      "streamUrl": "https://drive.uber.radio/uber/bollywoodnow/icecast.audio",
+      "isFavorite": true
+    },
+    {
+      "frequency": "98.3",
+      "name": "Radio Mirchi",
+      "band": "FM",
+      "rdsInfo": "Kesariya - Brahmastra | Arijit Singh & Pritam",
+      "streamUrl": "https://drive.uber.radio/uber/bollywoodlove/icecast.audio",
+      "isFavorite": true
+    },
+    {
+      "frequency": "100.5",
+      "name": "AIR FM Gold",
+      "band": "FM",
+      "rdsInfo": "National News & Gazal Mehfil - Jagjit Singh Special",
+      "streamUrl": "https://azuracast.vibesounds.in:8010/radio.mp3",
+      "isFavorite": true
+    },
+    {
+      "frequency": "104.8",
+      "name": "Ishq FM",
+      "band": "FM",
+      "rdsInfo": "Do Dil Mil Rahe Hain - Kumar Sanu (Pardes)",
+      "streamUrl": "https://funasia.streamguys1.com/live9",
+      "isFavorite": false
+    },
+    {
+      "frequency": "106.4",
+      "name": "Radio City Hindi",
+      "band": "FM",
+      "rdsInfo": "Tum Se Hi - Mohit Chauhan (Jab We Met)",
+      "streamUrl": "https://s7.everestcast.com:1155/stream",
+      "isFavorite": false
+    },
+    {
+      "frequency": "107.2",
+      "name": "Club FM",
+      "band": "FM",
+      "rdsInfo": "Drive Time Live with RJ Arun - Top Chartbusters",
+      "streamUrl": "https://stream.radioudaan.com/listen/radio_udaan/radio.mp3",
+      "isFavorite": false
+    },
+    {
+      "frequency": "657",
+      "name": "AIR National AM",
+      "band": "AM",
+      "rdsInfo": "All India Radio - Golden Era Classical & News",
+      "streamUrl": "http://dard.out.airtime.pro:8000/dard_a",
+      "isFavorite": true
+    },
+    {
+      "frequency": "810",
+      "name": "AIR Vividh Bharati",
+      "band": "AM",
+      "rdsInfo": "Vividh Bharati AM - Sangeet Sarita & Evergreen Classics",
+      "streamUrl": "http://millenniumhits.out.airtime.pro:8000/millenniumhits_a",
+      "isFavorite": false
+    },
+    {
+      "frequency": "1026",
+      "name": "AIR Rainbow AM",
+      "band": "AM",
+      "rdsInfo": "Vibrant Youth Waves - Retro Fusion & Requests",
+      "streamUrl": "http://millenniumhits.out.airtime.pro:8000/millenniumhits_a",
+      "isFavorite": false
+    }
+  ]
+}

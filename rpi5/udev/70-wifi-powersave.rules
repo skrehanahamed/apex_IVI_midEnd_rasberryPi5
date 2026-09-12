@@ -1,0 +1,2 @@
+# Disable Wi-Fi power save on Raspberry Pi 5 to prevent 2.4 GHz RF coexistence blackouts with Bluetooth
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan0", RUN+="/usr/sbin/iw wlan0 set power_save off"

@@ -1,0 +1,15 @@
+[Unit]
+Description=VNC Audio Stream Server for Apex IVI
+After=network.target pipewire.service
+Wants=pipewire.service
+
+[Service]
+Type=simple
+WorkingDirectory=/root/apex-ivi
+ExecStart=/usr/bin/python3 /root/apex-ivi/vnc-audio-server.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

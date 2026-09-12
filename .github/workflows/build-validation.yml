@@ -1,0 +1,51 @@
+name: Build Validation & CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-linux-qt6:
+    name: Linux Qt 6 Build Validation
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Build Dependencies & Qt 6
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            ninja-build \
+            libgl1-mesa-dev \
+            libxkbcommon-dev \
+            qt6-base-dev \
+            qt6-declarative-dev \
+            qt6-multimedia-dev \
+            qml6-module-qtquick \
+            qml6-module-qtquick-controls \
+            qml6-module-qtquick-layouts \
+            qml6-module-qtquick-window
+
+      - name: Configure CMake
+        run: |
+          cmake -B build -S . \
+            -GNinja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DQT_NO_PACKAGE_VERSION_CHECK=TRUE
+
+      - name: Build ApexIVI Binary
+        run: |
+          cmake --build build --parallel $(nproc)
+
+      - name: Verify Executable Generated
+        run: |
+          test -f build/ApexIVI && echo "SUCCESS: ApexIVI binary compiled successfully!"

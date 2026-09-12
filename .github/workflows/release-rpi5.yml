@@ -1,0 +1,31 @@
+name: Release Packaging
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  package-release:
+    name: Package Raspberry Pi 5 IVI Bundle
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create Release Archive
+        run: |
+          mkdir -p dist
+          tar -czvf dist/apex-ivi-rpi5-configs.tar.gz rpi5/
+          zip -r dist/apex-ivi-source-${{ github.ref_name }}.zip src/ qml/ assets/ CMakeLists.txt resources.qrc rpi5/ README.md
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            dist/apex-ivi-rpi5-configs.tar.gz
+            dist/apex-ivi-source-${{ github.ref_name }}.zip
+          generate_release_notes: true
