@@ -7,6 +7,7 @@
 ### Production-Grade Automotive In-Vehicle Infotainment (IVI) for Raspberry Pi 5
 #### Powered by Qt 6.7 LTS, Broadcom VideoCore VII (DRM/KMS EGLFS), and PipeWire Audio
 
+[![Version](https://img.shields.io/badge/Version-v1.1.0-007ACC.svg?style=for-the-badge&logo=semver)](CMakeLists.txt)
 [![Target](https://img.shields.io/badge/Hardware-Raspberry%20Pi%205%20(BCM2712)-C51A4A.svg?style=for-the-badge&logo=raspberrypi&logoColor=white)](https://www.raspberrypi.com/products/raspberry-pi-5/)
 [![Framework](https://img.shields.io/badge/Framework-Qt%206%20Quick%20%7C%20C%2B%2B20-41CD52.svg?style=for-the-badge&logo=qt&logoColor=white)](https://www.qt.io/)
 [![Audio](https://img.shields.io/badge/Audio%20Engine-PipeWire%20%7C%20WirePlumber-2B7A78.svg?style=for-the-badge&logo=sound&logoColor=white)](https://pipewire.org/)
