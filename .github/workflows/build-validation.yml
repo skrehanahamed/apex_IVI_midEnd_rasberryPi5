@@ -27,6 +27,8 @@ jobs:
             ninja-build \
             libgl1-mesa-dev \
             libxkbcommon-dev \
+            libasound2-dev \
+            libpulse-dev \
             qt6-base-dev \
             qt6-declarative-dev \
             qt6-multimedia-dev \
