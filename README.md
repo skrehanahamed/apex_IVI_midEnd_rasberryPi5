@@ -5,10 +5,17 @@
 ![APEX Logo](assets/branding/apex_logo.png)
 
 ### Production-Grade Automotive In-Vehicle Infotainment (IVI) for Raspberry Pi 5
-#### Powered by Qt 6.7 LTS, Broadcom VideoCore VII (DRM/KMS EGLFS), and PipeWire Audio
+#### Powered by Embedded Yocto Linux, Qt 6.7 LTS, and Broadcom VideoCore VII (DRM/KMS EGLFS)
+
+<p align="center">
+  <img src="assets/branding/raspberry_pi_5.png" alt="Raspberry Pi 5" width="450" />
+  <br/>
+  <img src="assets/branding/yocto_project_logo.png" alt="Yocto Project" width="220" />
+</p>
 
 [![Version](https://img.shields.io/badge/Version-v1.2.0-007ACC.svg?style=for-the-badge&logo=semver)](CMakeLists.txt)
 [![Target](https://img.shields.io/badge/Hardware-Raspberry%20Pi%205%20(BCM2712)-C51A4A.svg?style=for-the-badge&logo=raspberrypi&logoColor=white)](https://www.raspberrypi.com/products/raspberry-pi-5/)
+[![OS](https://img.shields.io/badge/OS-Yocto_Scarthgap_5.0_LTS-00355f.svg?style=for-the-badge&logo=yoctoproject&logoColor=white)](https://www.yoctoproject.org/)
 [![Framework](https://img.shields.io/badge/Framework-Qt%206%20Quick%20%7C%20C%2B%2B20-41CD52.svg?style=for-the-badge&logo=qt&logoColor=white)](https://www.qt.io/)
 [![Audio](https://img.shields.io/badge/Audio%20Engine-PipeWire%20%7C%20WirePlumber-2B7A78.svg?style=for-the-badge&logo=sound&logoColor=white)](https://pipewire.org/)
 [![Telephony](https://img.shields.io/badge/Telephony-BlueZ%205%20%7C%20oFono-0052CC.svg?style=for-the-badge&logo=bluetooth&logoColor=white)](https://www.bluez.org/)
